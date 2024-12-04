@@ -15,7 +15,8 @@ body {
 
 .title {
   font-size: 2rem;
-  margin-bottom: 4rem;
+  margin: 0;
+  margin-block-end: 3rem;
 }
 
 .indented-heading {
@@ -23,15 +24,22 @@ body {
   width: fit-content;
   padding-inline: 32px;
   padding-block: 16px;
+  margin-top: -15px;
+  margin-left: -32px;
+  margin-bottom: 1rem;
   background-color: hsl(45deg, 100%, 50%);
   border-bottom: 8px solid hsl(45deg, 100%, 40%);
-  margin-left: -34px;
 }
 
 p {
   font-size: 1.25rem;
   line-height: 1.5;
-  margin-bottom: 1rem;
+  margin: 0;
+  margin-block-end: 1rem;
+}
+
+p:last-child {
+  margin-block-end: 0;
 }
 
 strong {
@@ -41,22 +49,22 @@ strong {
 
 /* layout */
 
-header {
+.intro-chunk {
+  max-width: 415px;
   padding-top: 96px;
   padding-bottom: 64px;
-  padding-inline: 8px;
 }
 
 main {
-  padding-block: 72px;
+  padding-block: 64px;
   border-top: 7px solid hsl(0deg, 0%, 60%);
   background-color: hsl(0deg, 0%, 40%);
-}
+} 
 
 .card {
   background-color: white;
-  padding-block: 0.15px 24px;
-  padding-inline: 8px;
+  padding: 24px;
+  margin: 0 -24px;
   border-bottom:  7px solid hsl(0deg, 0%, 60%);
 }
 
@@ -66,4 +74,5 @@ main {
 .max-width-wrapper {
   max-width: 800px;
   margin-inline: auto;
+  padding-inline: 24px;
 }
